@@ -1,0 +1,35 @@
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    transform: translate(25%, 50%);
+}
+
+.zigzag{
+    overflow: hidden;
+}
+
+th, td{
+    padding: .25em .5em;
+    text-align: left;
+    vertical-align: top;
+}
+th{
+    background-color: blue;
+    color: #FFFFFF;
+}
+
+td{
+    background-color: #eee;
+}
+
+tr{
+    transition: all 1s ease-in-out;
+    &.slide-out{
+        transform: translateX(100%);
+    }
+}
